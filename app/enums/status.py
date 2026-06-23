@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class Status(Enum):
     active = "active"
     non_active = "non-active"
