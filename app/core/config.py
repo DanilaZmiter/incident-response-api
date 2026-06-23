@@ -2,6 +2,9 @@ from pydantic_settings import BaseSettings
 from pydantic import BaseModel
 from dotenv import load_dotenv
 import os
+from pathlib import Path
+
+PATH = Path(__file__).parent.parent
 
 load_dotenv()
 
