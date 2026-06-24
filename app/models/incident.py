@@ -15,5 +15,6 @@ class IncidentModel(BaseModel):
     user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id"))
     title: Mapped[str] = mapped_column(String(40), nullable=False)
     created_at: Mapped[DateTime] = mapped_column(DateTime, nullable=False)
+    resolved_at: Mapped[DateTime] = mapped_column(DateTime, nullable=True)
     status: Mapped[Status] = mapped_column(Enum(Status), nullable=False)
     user: Mapped["UserModel"] = relationship(back_populates="incidents")
