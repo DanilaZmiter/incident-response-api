@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import Integer, ForeignKey, String, DateTime, Enum
-from database.base import BaseModel
-from enums.status import Status
+from app.database.base import BaseModel
+from app.enums.status import Status
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:

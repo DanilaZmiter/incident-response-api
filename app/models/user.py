@@ -1,9 +1,12 @@
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from database.base import BaseModel
+from app.database.base import BaseModel
 from sqlalchemy import String, Enum, Boolean
-from enums.roles import Roles
-from models.incident import IncidentModel
+from app.enums.roles import Roles
 from typing import List
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from models.incident import IncidentModel
 
 
 class UserModel(BaseModel):
