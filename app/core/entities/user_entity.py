@@ -4,7 +4,7 @@ from app.core.enums.roles import Roles
 
 @dataclass
 class UserEntity(BaseEntity):
-    id: str
+    id: int
     username: str
     mail: str
     hashed_password: str
