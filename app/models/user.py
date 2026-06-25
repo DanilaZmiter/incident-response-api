@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.database.base import BaseModel
 from sqlalchemy import String, Enum, Boolean
-from app.enums.roles import Roles
+from app.core.enums.roles import Roles
 from typing import List
 from typing import TYPE_CHECKING
 
